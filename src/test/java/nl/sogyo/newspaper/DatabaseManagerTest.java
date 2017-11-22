@@ -1,42 +1,41 @@
-package com.newspaper;
+package nl.sogyo.newspaper;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+//import junit.framework.Test;
+//import junit.framework.TestCase;
+//import junit.framework.TestSuite;
+import com.mongodb.MongoClient;
+import nl.sogyo.newspaper.persistence.*;
 
-/**
- * Unit test for simple Editor.
- */
-public class EditorTest
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public EditorTest(String testName )
-    {
-        super( testName );
-    }
+import org.junit.*;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( EditorTest.class );
-    }
+import java.util.logging.*;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+import static org.junit.Assert.*;
 
-    public void createDatabase() {
-        assertEquals(1, 1);
+public class DatabaseManagerTest {
+
+//    private DatabaseManager manager;
+//    private Logger mongoLogger  = Logger.getLogger("org.mongodb.driver");
+//
+////    @Before
+//    public void beforeEachTest() {
+//        manager = new DatabaseManager();
+//        mongoLogger.setLevel(Level.OFF);
+//        manager.createClient("localhost", 27017);
+//    }
+//
+//    @After
+//    public void afterEachTest() {
+//        manager = null;
+//    }
+//
+//    @Test
+//    public void clientAddressIsCorrect() {
+//        MongoClient client = manager.getClient();
+//        assertEquals(client.getAddress().toString(), "localhost:27017");
+//    }
+    @Test
+    public void emptyTest() {
+        assertTrue(true);
     }
 }
