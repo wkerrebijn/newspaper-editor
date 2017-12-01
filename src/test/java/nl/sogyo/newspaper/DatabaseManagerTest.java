@@ -14,16 +14,13 @@ import static org.junit.Assert.*;
 
 public class DatabaseManagerTest {
 
-//    private DatabaseManager manager;
-//    private Logger mongoLogger  = Logger.getLogger("org.mongodb.driver");
-//
-////    @Before
+    private DatabaseManager manager = DatabaseManager.getInstance();
+
+//    @Before
 //    public void beforeEachTest() {
-//        manager = new DatabaseManager();
-//        mongoLogger.setLevel(Level.OFF);
-//        manager.createClient("localhost", 27017);
-//    }
 //
+//    }
+
 //    @After
 //    public void afterEachTest() {
 //        manager = null;
